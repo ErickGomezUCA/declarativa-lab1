@@ -1,0 +1,33 @@
+1 ?- consult('./lab3.pl').
+true.
+
+2 ?- trace.
+true.
+
+[trace] 2 ?- suma(4, R).
+   Call: (12) suma(4, _27284) ? creep
+   Call: (13) 4>1 ? creep
+   Exit: (13) 4>1 ? creep
+   Call: (13) _30672 is 4+ -1 ? creep
+   Exit: (13) 3 is 4+ -1 ? creep
+   Call: (13) suma(3, _32446) ? creep
+   Call: (14) 3>1 ? creep
+   Exit: (14) 3>1 ? creep
+   Call: (14) _35112 is 3+ -1 ? creep
+   Exit: (14) 2 is 3+ -1 ? creep
+   Call: (14) suma(2, _36886) ? creep
+   Call: (15) 2>1 ? creep
+   Exit: (15) 2>1 ? creep
+   Call: (15) _39552 is 2+ -1 ? creep
+   Exit: (15) 1 is 2+ -1 ? creep
+   Call: (15) suma(1, _41326) ? creep
+   Exit: (15) suma(1, 1) ? creep
+   Call: (15) _36886 is 2+1 ? creep
+   Exit: (15) 3 is 2+1 ? creep
+   Exit: (14) suma(2, 3) ? creep
+   Call: (14) _32446 is 3+3 ? creep
+   Exit: (14) 6 is 3+3 ? creep
+   Exit: (13) suma(3, 6) ? creep
+   Call: (13) _27284 is 4+6 ? creep
+   Exit: (13) 10 is 4+6 ? creep
+   Exit: (12) suma(4, 10) ? creep
